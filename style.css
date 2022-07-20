@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#banner{
+    width:100%;
+    height:100vh;
+    background-color: rgb(249, 235, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    line-height: 100vh;
+}
+.marque{
+     height: 30px;
+     width: 100%;
+     background-color: rgb(87,174,128);
+     border-radius: 2px solid black;
+     margin-bottom: 2px;
+
+}
+#section1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#section1 .class{
+    width: 200px;
+    height: 300px;
+    background-color: palevioletred;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10%;
+}
+
+h2{
+    text-align: center;
+margin : 20px 0px;
+font-size: 30px;
+}#sec3{
+    display: flex;
+    justify-content: space-between;
+}
+#sec3 .circle{
+    width: 200px;
+    height: 300px;
+    background-color: rgba(138, 206, 223, 0.683);
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10%;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+}
+.menu{
+    background-color: rgb(87, 174, 128);
+   text-align: center;
+
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+.menu ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: cursive;
+}
+.fa{
+    margin-right: 5px;
+}
+.menu ul li:hover{
+    background-color: rgb(159, 224, 239) ;
+    
+}
+.dropdown1{
+    display: none;
+}
+
+.menu ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+.menu ul li:hover .dropdown1 ul{
+    display: block;
+}
+.menu ul li:hover .dropdown1 ul li{
+    background: transparent;
+    border-bottom: 1px solid rgb(232, 148, 148);
+    width: 150px;
+}
+.menu ul li:hover .dropdown1 ul li a:hover{
+    color: rgb(237, 219, 219);
+}
+.content{
+    height: 400px;
+    width: 80%;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    font-family: cursive;
+    font-size: 30px;
+   
+
+
+}
+.BText{
+    height: 20px;
+    width: 300px;
+    background-color: pink;
+    font-family: cursive;
+    font-size: 30px;
+    margin-bottom: 200px;
+    margin-top: 10px;
+    
+}
+.image1{
+    height: 400px;
+    width: 70%;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+   
+} 
+.ftr{
+    background-color: rgb(173, 169, 169);
+   text-align: center;
+   margin-top: 20px;
+
+}
+.ftr ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 2px;
+}
+.ftr ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.fa{
+    margin-right: 2px;
+}
+.ftr ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: cursive;
+}
