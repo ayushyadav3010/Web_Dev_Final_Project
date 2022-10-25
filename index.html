@@ -1,88 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Tabs practice</title>
-</head>
-<body>
-    <marquee class="marque" behavior="" direction=""
-    style="font-family:Arial, Helvetica, sans-serif; font-size: 20px;">Welcome to Medi+Care!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Now you can Order your Medicine only on Medi+Care!! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Talk to your Doctor Any Time! </marquee>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Deivery Website</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
 
-    <div class="menu">
-        <ul>
-        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Health Records</a></li>
-        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Apponitments</a>
-        <div class="dropdown1">
-            <ul>
-                <li><a href="#">Book your Appointment
-                    <a href="./abc.html"></a>
-                </a></li>
-            </ul>
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-solid fa-Doctor"></i>Medi+Kit</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#categories">Services for you</a>
+        <a href="#products">Products</a>
+        <a href="#features">Lab Tests</a>
+        <a href="#review">Reviews</a>
+        <a href="#Contact">Contact</a>
+      </nav>
 
-            
-             
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <img src="./Images/dolo.jpg" alt="" width="150px" />
+          <i class="fas fa-trash"></i>
+          <div class="content">
+            <h3>dolo</h3>
+            <span class="price">Rs:35</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
         </div>
-        </li>
-        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Medicine</a></li>
-        <li><a href="#"><i class="fa fa-server" aria-hidden="true"></i>Tests</a>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./Images/volini.jpg" alt="" />
+          <div class="content">
+            <h3>Volini</h3>
+            <span class="price">Rs: 120</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./Images/paracetamol.jpg" alt="" />
+          <div class="content">
+            <h3>paracetamol</h3>
+            <span class="price">Rs:30</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="total">Total:185</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
         
-        <div class="dropdown1">
-            <ul><li><a href="#">Full Body CheckUp</a></li>
-            <li><a href="#">Diabetes</a></li>
-            <li><a href="#">Covid-19</a></li>
-            <li><a href="#">Thyroid Profile</a></li>
-            <li><a href="#">Complete Blood Count(CBC)</a></li></ul>
+        &nbsp;
+        &nbsp;
+        <h3>Order your Medicine Online <span>Only on </span> <br> <br> Medi+Kit</h3>
+        <h2>Medi+Kit Number One!! #ForyourfirstOrder</h2>
+        <h2>Get your medicine within 20 minutes</h2>
+        <h2>Order Now!!</h2>
+        <br />
+        <br />
+
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <h1 class="heading"> <span>Services For Customer</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./Images/covid.png" alt="" />
+          <h3>Book doctor by sympyoms!</h3>
+          <a href="#" class="btn">Book Now</a>
         </div>
+
+        <div class="box">
+          <img src="./Images/vacc2.png" alt="" />
+          <h3>Book Covid Vaccination</h3>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+
+        <div class="box">
+          <img src="./Images/doc con.webp" alt="" />
+          <h3>One Tap Consult @250</h3>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading"><span> Products!!</span></h1>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./Images/skin care.jpg" alt="" />
+            <h3>Skin Care products</h3>
+            <div class="price">Rs:700-1000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/Patanjali Products.jpg" alt="" />
+            <h3>Patanjali Products</h3>
+            <div class="price">On MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/Omg3.jfif" alt="" />
+            <h3>Omega-3 Capsule</h3>
+            <div class="price">Rs:30</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/baby.jpg" alt="" />
+            <h3>Baby Products</h3>
+            <div class="price">ON MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./Images/Syrup.png" alt="" />
+            <h3>Syrup</h3>
+            <div class="price">ON MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/oilll.jpg" alt="" />
+            <h3>Hair Products</h3>
+            <div class="price">ON MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/Vitam.jpg" alt="" />
+            <h3>Vitamin products</h3>
+            <div class="price">ON MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/Mask.jpg" alt="" />
+            <h3>Masks</h3>
+            <div class="price">On MRP</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h1 class="heading"><span>Our features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./Images/Mankind_Serving_Life.png" alt="" />
+          <h3 id="fresh">Top Brands</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            earum!
+          </p>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+        <div class="box">
+            <img src="./Images/lab.jpg" alt="" width="150px" />
+            <h3>Lab Tests</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              earum!
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+          <div class="box">
+            <img src="./Images/doc.jpg" alt="" width="150px" />
+            <h3>Consult a Doctor</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              earum!
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+
+
+        <div class="box">
+          <img src="./Images/freedelivery.webp" alt="" width="150px" />
+          <h3>free delivery</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            earum!
+          </p>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+
+        <div class="box">
+          <img src="./Images/Jio-logo.jpg" alt="" />
+          <h3>easy payments</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            earum!
+          </p>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading"><span>Customer's review</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./Images/virat.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+            </p>
+            <h3>virat Kohli</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./Images/hri.jpg" alt="" width="100px" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+            </p>
+            <h3>Hritik</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="./Images/srk.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+            </p>
+            <h3>Srk</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="./Images/dhoni.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+            </p>
+            <h3>Dhoni</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>Our blogs</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./Images/blog1.png" alt="" />
+          <div class="content">
+            <h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
+                ullam.
+              </p>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              expedita.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Images/blog3.jpg" alt="" />
+          <div class="content">
+            <h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              expedita.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Images/blog2.png" alt="" />
+          <div class="content">
+            <h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, amet.
+            </p></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              expedita.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
         
-        </li>
-        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
-        <div class="icons">
-            <div class="fas fa-bars" id="mnubtn"></div>
-            <div class="fas fa-search" id="srchbtn"></div>
-            <div class="fas fa-shopping-cart" id="shpbtn"></div>
-            <div class="fas fa-user" id="loginbtn"></div>
-    
+        <div class="box">
+          <h3>Useful links</h3>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Lab Tests
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Products
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i>Services For You
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Review
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Contacts
+          </a>
         </div>
-    </div>
+
+        <div class="box">
+          <h3>Contacts </h3>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i>MediKit108@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Lucknow, India-226012
+          </a>
+        </div>
 
 
-<div id="banner">
-  <div class="content1">
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="./Images/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+      
+    </section>
 
-  </div>
-   <div class="content2" >
-   </div> 
-</div>
-
-
-<h2>Shop By Categories</h2>
-<section id="section1">
-    <div class="class"></div>
-    <div class="class"></div>
-    <div class="class"></div>
-    <div class="class"></div>
-    <div class="class"></div>
-
-</section >
-
-<h2>Health Concerns</h2>
-<section id="sec3">
-    <div id="c1"  class="circle"></div>
-    <div id="c2" class="circle"></div>
-    <div id="c3" class="circle"></div>
-    <div id="c4" class="circle"></div>
-    <div id="c4" class="circle"></div>
-
-</section>
-
-
-<script src="./script.js"></script>
-    
-</body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
